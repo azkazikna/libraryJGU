@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth relative overflow-x-hidden w-full">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,38 +64,67 @@
     </header>
     <!-- Header End -->
 
-    <main data-barba="container" data-barba-namespace="register">
+    <main data-barba="container" data-barba-namespace="home">
 
-    <!-- Main section register start -->
-    <section id="register" class="pt-20 pb-32 lg:pb-30 px-4">
-        <div class="container mx-auto flex flex-col lg:flex-row gap-12 lg:gap-0 bg-white items-center rounded-2xl px-4 lg:px-14 py-14 lg:py-24 shadow-md justify-center">
-            <div class="w-full">
-                <img src="dist/img/casual-life-3d-young-couple-sitting-on-the-floor-and-reading-books.png" alt="" class="w-[600px]">
+    <!-- All book section start -->
+    <section id="allbook" class="pt-12 pb-32 lg:py-38">
+        <div class="container mx-auto mb-10 px-4">
+            <h1 class="text-darken text-4xl lg:text-5xl font-bold">All <span class="text-primary">Books</span> :</h1>
+        </div>
+        <div class="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 px-4">
+            <div class="group">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="dist/img/book/3._SY475_.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
+                </div>
+                <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Sorcerer Stone</h3>
+                <p class="text-sm text-dark">Fantasy</p>
             </div>
-            <div class="w-full">
-                <h5 class="font-bold text-xl text-center text-darken mb-7">Create your Free Account</h5>
-                <form action="">
-                    <div class="form-group mt-7">
-                        <label for="name" class="text-dark">Full Name</label><br>
-                        <input type="text" name="name" id="name" class="bg-[#B0BAC3] bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your Full Name here">
-                    </div>
-                    <div class="form-group mt-7">
-                        <label for="email" class="text-dark">Email</label><br>
-                        <input type="email" name="email" id="email" class="bg-[#B0BAC3] bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your Email here">
-                    </div>
-                    <div class="form-group mt-7">
-                        <label for="password" class="text-dark">Password</label><br>
-                        <input type="password" name="password" id="password" class="bg-[#B0BAC3] bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your Password here">
-                    </div>
-                    <div class="flex justify-center mt-7">
-                        <button type="submit" class="py-3 px-5 bg-primary text-darken text-lg rounded-lg">Create Account</button>
-                    </div>
-                </form>
-                <p class="text-sm text-darken text-center mt-4">Already have an account? <a href="login.html" class="text-primary">Log In</a></p>
+            <div class="group">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="dist/img/book/hp_goblet.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
+                </div>
+                <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Goblet of Fire</h3>
+                <p class="text-sm text-dark">Fantasy</p>
+            </div>
+            <div class="group">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="dist/img/book/hp_halfblood.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
+                </div>
+                <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Half-Blood Prince</h3>
+                <p class="text-sm text-dark">Fantasy</p>
+            </div>
+            <div class="group">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="dist/img/book/hp_deathly.webp" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
+                </div>
+                <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Deathly Hallows</h3>
+                <p class="text-sm text-dark">Fantasy</p>
+            </div>
+            <div class="group">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="dist/img/book/hp_philosoper.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
+                </div>
+                <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Philosopher's Stone</h3>
+                <p class="text-sm text-dark">Fantasy</p>
+            </div>
+            <div class="group">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="dist/img/book/hp_chamber.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
+                </div>
+                <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Chamber of Secrets</h3>
+                <p class="text-sm text-dark">Fantasy</p>
             </div>
         </div>
     </section>
-    <!-- Main section register end -->
+    <!-- All book section end -->
+
+    <!-- footer start -->
+    <footer class="py-8 bg-primary">
+        <div class="container mx-auto px-4">
+            <p class="text-darken text-center">&copy; Design by <a href="https://www.facebook.com/tswndr/" class="font-bold">Toby Suwindra</a> Built by <a href="https://azkazikna.github.io/" class="font-bold">Azkazikna Ageung Laksana</a> 2022. All rights reserved</p>
+        </div>
+    </footer>
+    <!-- footer end -->
 
     </main>
 
