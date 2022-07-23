@@ -37,13 +37,10 @@ const swiper1 = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
 
     breakpoints: {
-        // when window width is >= 320px
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 20
-        },
         // when window width is >= 640px
         640: {
           slidesPerView: 4,
@@ -61,13 +58,10 @@ const swiper1 = new Swiper('.swiper1', {
 const swiper2 = new Swiper('.swiper2', {
     // Optional parameters
     direction: 'horizontal',
+    slidesPerView: 2,
+    spaceBetween: 20,
 
     breakpoints: {
-        // when window width is >= 320px
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 20
-        },
         // when window width is >= 640px
         640: {
           slidesPerView: 3,

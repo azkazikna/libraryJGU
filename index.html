@@ -16,7 +16,7 @@
 </head>
 <body class="font-poppins bg-[#FEFDF9]">
     <!-- Header Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-4">
+    <header class="bg-transparent relative top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-5 lg:py-4">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
@@ -32,7 +32,7 @@
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-[#FEFDF9] shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:border-slate-500 dark:border lg:dark:border-none z-[999]">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-[#FEFDF9] shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:border lg:dark:border-none z-[999] mt-5 lg:mt-0">
                         <ul class="block lg:flex">
                             <li class="group"><a href="#home" class="text-base text-primary font-bold py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Home</a></li>
                             <li class="group"><a href="#about" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Books</a></li>
@@ -54,7 +54,7 @@
     <!-- Header End -->
 
     <!-- Hero section start -->
-    <section id="hero" class="py-32 lg:pb-38 lg:pt-48">
+    <section id="hero" class="py-32 lg:py-38">
         <div class="container px-4 lg:px-5 xl:px-0 mx-auto lg:flex items-center justify-between gap-20 relative">
             <img src="dist/img/casual-life-3d-young-woman-imagining-things-while-reading-e-book.png" alt="" class="absolute -z-10 left-1/2 w-[600px] xl:w-[750px] bottom-0 hidden lg:block">
             <div class="w-full">
@@ -62,8 +62,8 @@
                 <h1 class="text-dark text-6xl lg:text-7xl xl:text-8xl font-bold mt-7">Take a look <br> it's in a <span class="text-darken">BOOK</span></h1>
                 <p class="text-lg text-dark mt-4">Knowledge is a seed that grows when you read.</p>
                 <form action="" class="relative">
-                    <input type="text" name="" id="serach" class="rounded-full w-full shadow-lg mt-10 p-6" placeholder="Search books, author, categories ...">
-                    <input type="submit" class="cursor-pointer px-6 py-2 rounded-full bg-primary text-lg text-darken absolute top-1/2 right-[30px]" value="Search">
+                    <input type="text" name="" id="serach" class="rounded-full w-full shadow-lg mt-10 p-6 text-sm lg:text-base" placeholder="Search books, author, categories ...">
+                    <input type="submit" class="cursor-pointer px-6 py-2 rounded-full bg-primary text-base lg:text-lg text-darken absolute top-1/2 right-[30px]" value="Search">
                 </form>
                 <div class="mt-14 w-full xl:w-[60%]">
                     <p class="text-dark uppercase mb-3">Popular books</p>
