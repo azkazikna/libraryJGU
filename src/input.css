@@ -44,3 +44,11 @@
 .hamburger-active > span:nth-child(3) {
     @apply -rotate-45;
 }
+
+.loading-screen {
+    @apply relative pl-0 pr-0 pt-0 bg-primary dark:bg-primary w-0 h-full;
+}
+
+.load-container {
+    @apply fixed top-0 left-0 w-full h-[100vh] overflow-hidden z-[999999] pointer-events-none;
+}

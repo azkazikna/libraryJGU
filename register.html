@@ -18,7 +18,15 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="dist/css/output.css">
 </head>
-<body class="font-poppins bg-[#FEFDF9] overflow-x-hidden relative w-full">
+<body class="font-poppins bg-[#FEFDF9] overflow-x-hidden relative w-full" data-barba="wrapper">
+
+    <!-- transition start -->
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+    <!-- transition end -->
+
+    <main data-barba="container" data-barba-namespace="register">
 
     <!-- Header Start -->
     <header class="bg-transparent relative top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-5 lg:py-4">
@@ -66,9 +74,20 @@
     </section>
     <!-- Main section register end -->
 
+    </main>
 
-
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Barba JS -->
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdn.jsdelivr.net/npm/@barba/prefetch@2.1.10/dist/barba-prefetch.umd.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <!-- Swiper Slider -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- Custom Javascript -->
+<script src="dist/js/script.js"></script>
+<!-- transition javascript -->
+<script src="dist/js/transition.js"></script>
 </body>
 </html>

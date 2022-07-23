@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth relative overflow-x-hidden w-full">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,14 +18,22 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="dist/css/output.css">
 </head>
-<body class="font-poppins bg-[#FEFDF9] overflow-x-hidden relative w-full">
+<body class="font-poppins bg-[#FEFDF9]" data-barba="wrapper">
+
+    <!-- transition start -->
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+    <!-- transition end -->
+
+    <main data-barba="container" data-barba-namespace="home">
 
     <!-- Header Start -->
     <header class="bg-transparent relative top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-5 lg:py-4">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="flex items-center">
+                    <a href="#" class="flex items-center">
                         <img src="dist/icon/casual-life-3d-yellow-pink-and-beige-books-lying-on-top-of-each-other.png" alt="" class="w-20 lg:w-24">
                         <h1 class="text-2xl lg:text-3xl font-bold text-primary"><span class="text-darken">see</span>BOOK</h1>
                     </a>
@@ -39,13 +47,13 @@
 
                     <nav id="nav-menu" class="hidden absolute py-5 bg-[#FEFDF9] shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:border lg:dark:border-none z-[999] mt-5 lg:mt-0">
                         <ul class="block lg:flex">
-                            <li class="group" id="subnav"><a href="#" class="text-base text-darken py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Home</a></li>
-                            <li class="group" id="subnav"><a href="#category" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Books</a></li>
-                            <li class="group" id="subnav"><a href="#achievement" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Blog</a></li>
-                            <li class="group" id="subnav"><a href="#clients" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">About</a></li>
+                            <li class="group" id="subnav"><a href="#" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Home</a></li>
+                            <li class="group" id="subnav"><a href="#" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Books</a></li>
+                            <li class="group" id="subnav"><a href="#" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Blog</a></li>
+                            <li class="group" id="subnav"><a href="#" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">About</a></li>
                             <hr class="text-dark mt-5 mb-2 lg:hidden">
-                            <li class="group" id="subnav"><a href="#clients" class="text-base text-darken font-medium py-2 justify-center flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out lg:hidden">Login</a></li>
-                            <li class="group" id="subnav"><a href="" class="text-base font-medium text-darken px-4 py-2 bg-primary shadow-lg lg:hidden mx-8 my-2 block rounded-sm text-center">Create account</a></li>
+                            <li class="group" id="subnav"><a href="login.html" class="text-base text-darken font-medium py-2 justify-center flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out lg:hidden">Login</a></li>
+                            <li class="group" id="subnav"><a href="register.html" class="text-base font-medium text-darken px-4 py-2 bg-primary shadow-lg lg:hidden mx-8 my-2 block rounded-sm text-center">Create account</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -232,9 +240,20 @@
     </footer>
     <!-- footer end -->
 
+    </main>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Barba JS -->
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdn.jsdelivr.net/npm/@barba/prefetch@2.1.10/dist/barba-prefetch.umd.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <!-- Swiper Slider -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <!-- Custom Javascript -->
 <script src="dist/js/script.js"></script>
+<!-- transition javascript -->
+<script src="dist/js/transition.js"></script>
 </body>
 </html>
