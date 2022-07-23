@@ -48,10 +48,13 @@ window.onscroll = function() {
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 
-hamburger.addEventListener('click', function() {
-    hamburger.classList.toggle('hamburger-active');
-    navMenu.classList.toggle('hidden');
-});
+function hamburgerNav() {
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('hamburger-active');
+        navMenu.classList.toggle('hidden');
+    });
+}
+hamburgerNav();
 
 // Klik diluar hamburger
 window.addEventListener('click', function(e) {

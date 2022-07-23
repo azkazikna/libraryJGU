@@ -14,6 +14,7 @@ barba.init({
             },
             async leave({ current, next, trigger }) {
                 const done = this.async();
+                hamburgerNav();
                 pageTransition();
                 await delay(1000);
                 done();
@@ -23,6 +24,7 @@ barba.init({
             beforeEnter({ current, next, trigger }) {
             },
             enter({ current, next, trigger }) {
+                hamburgerNav();
                 // Slider Categories
                 const swiper1 = new Swiper('.swiper1', {
                     // Optional parameters

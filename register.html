@@ -26,8 +26,6 @@
     </div>
     <!-- transition end -->
 
-    <main data-barba="container" data-barba-namespace="register">
-
     <!-- Header Start -->
     <header class="bg-transparent relative top-0 left-0 w-full flex items-center justify-evenly z-index-10 transition duration-500 py-5 lg:py-4">
         <div class="container">
@@ -38,10 +36,35 @@
                         <h1 class="text-2xl lg:text-3xl font-bold text-primary"><span class="text-darken">see</span>BOOK</h1>
                     </a>
                 </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="buton" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-[#FEFDF9] shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:border lg:dark:border-none z-[999] mt-5 lg:mt-0">
+                        <ul class="block lg:flex">
+                            <li class="group" id="subnav"><a href="#" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Home</a></li>
+                            <li class="group" id="subnav"><a href="#" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Books</a></li>
+                            <li class="group" id="subnav"><a href="#" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Blog</a></li>
+                            <li class="group" id="subnav"><a href="#" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">About</a></li>
+                            <hr class="text-dark mt-5 mb-2 lg:hidden">
+                            <li class="group" id="subnav"><a href="login.html" class="text-base text-darken font-medium py-2 justify-center flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out lg:hidden">Login</a></li>
+                            <li class="group" id="subnav"><a href="register.html" class="text-base font-medium text-darken px-4 py-2 bg-primary shadow-lg lg:hidden mx-8 my-2 block rounded-sm text-center">Create account</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="lg:flex items-center gap-10 hidden">
+                    <a href="login.html" class="text-base font-medium text-darken">Login</a>
+                    <a href="register.html" class="text-base font-medium text-darken px-4 py-2 bg-primary shadow-lg rounded-full">Create account</a>
+                </div>
             </div>
         </div>
     </header>
     <!-- Header End -->
+
+    <main data-barba="container" data-barba-namespace="register">
 
     <!-- Main section register start -->
     <section id="register" class="pt-20 pb-32 lg:pb-30 px-4">
