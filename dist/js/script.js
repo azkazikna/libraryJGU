@@ -64,6 +64,11 @@ window.addEventListener('click', function(e) {
     }
 });
 
+//scroll restoration
+if ('scrollRestoration' in history) { 
+    history.scrollRestoration = 'manual'; 
+}
+
 // Slider Categories
 const swiper1 = new Swiper('.swiper1', {
     // Optional parameters

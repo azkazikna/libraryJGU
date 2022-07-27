@@ -1,5 +1,9 @@
 // tell Barba to use the prefetch module
 barba.use(barbaPrefetch);
+// scroll top
+barba.hooks.enter(() => {
+    window.scrollTo(0,0);
+});
 // Init Barba
 barba.init({
     cacheIgnore: false,
