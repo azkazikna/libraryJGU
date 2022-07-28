@@ -64,74 +64,64 @@
     </header>
     <!-- Header End -->
 
-    <main data-barba="container" data-barba-namespace="blog">
+    <main data-barba="container" data-barba-namespace="book">
 
     <!-- All book section start -->
-    <section id="allbook" class="py-32 lg:py-40">
-        <div class="container mx-auto mb-10 px-4">
-            <h1 class="text-dark text-4xl lg:text-5xl font-bold">All <span class="text-darken">Post</span> :</h1>
-            <form action="" class="relative">
-                <input type="text" name="keyword" id="search" class="rounded-full w-full shadow-lg mt-10 p-6 text-sm lg:text-base" placeholder="Search books, author, categories ..." autofocus autocomplete="off">
-                <input type="submit" class="cursor-pointer px-6 py-2 rounded-full bg-primary text-base lg:text-lg text-darken absolute top-1/2 right-[30px]" value="Search">
-            </form>
+    <div class="w-full h-48 bg-[#eae2d2] absolute -z-10 rounded-br-full"></div>
+    <section id="categories" class="py-32 lg:py-40" >
+        <div class="container mx-auto px-4 mb-10 lg:mb-20">
+            <h1 class="text-dark text-4xl lg:text-5xl font-bold text-center px-5 py-2 relative left-1/2 -translate-x-1/2 rounded-full bg-white w-fit shadow-md">All <span class="text-darken">Categories</span></h1>
         </div>
-        <div class="container mx-auto px-4 flex flex-col lg:flex-row gap-5">
-            <div class="w-full lg:w-[70%]">
-                <div class="w-full rounded-lg shadow-lg overflow-hidden mb-7">
-                    <img src="dist/img/post/sung-jin-woo.jpg" alt="" class="w-full h-64 object-cover object-center">
-                    <div class="body px-5 py-5 !pb-7">
-                        <h1 class="text-darken text-2xl lg:text-3xl font-bold">Is Sung Jin Woo The Best Hunter in The World?</h1>
-                        <p class="text-dark text-sm mt-1">by <a href="profile.html" class="text-darken">Azkazikna Ageung Laksana</a> in <a href="#" class="text-darken">Manhwa</a></p>
-                        <p class="text-darken mt-2 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum, est nulla, optio recusandae ipsa et praesentium ad tenetur itaque laborum nobis iusto laudantium quisquam nemo dolorum! Labore exercitationem pariatur amet incidunt molestias facilis sit nulla possimus voluptatum officiis est corrupti voluptates, voluptate quas inventore repudiandae consequatur voluptas? Eius, ratione?</p>
-                        <a href="#" class="py-2 px-5 bg-primary text-darken rounded-full">Read More</a>
-                    </div>
+        <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-4 gap-16">
+            <a href="" class="text-white bg-[url('../img/education.jpg')] bg-cover rounded-lg bg-center">
+                <div class="w-full h-full backdrop-brightness-50 rounded-lg px-5 pb-7">
+                    <p class="py-7 lg:p-7 text-center font-semibold text-xl">Education</p>
+                    <hr>
+                    <p class="text-base font-extralight text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam ipsa dolorem fugiat reprehenderit accusamus quas, veritatis necessitatibus totam delectus.</p>
                 </div>
-                <div class="w-full rounded-lg shadow-lg overflow-hidden mb-7">
-                    <img src="dist/img/post/lookism.webp" alt="" class="w-full h-64 object-cover object-center">
-                    <div class="body px-5 py-5 !pb-7">
-                        <h1 class="text-darken text-2xl lg:text-3xl font-bold">Lookism Reach Top 5 Manhwa in Webtoon</h1>
-                        <p class="text-dark text-sm mt-1">by <a href="profile.html" class="text-darken">Azkazikna Ageung Laksana</a> in <a href="#" class="text-darken">Manhwa</a></p>
-                        <p class="text-darken mt-2 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum, est nulla, optio recusandae ipsa et praesentium ad tenetur itaque laborum nobis iusto laudantium quisquam nemo dolorum! Labore exercitationem pariatur amet incidunt molestias facilis sit nulla possimus voluptatum officiis est corrupti voluptates, voluptate quas inventore repudiandae consequatur voluptas? Eius, ratione?</p>
-                        <a href="#" class="py-2 px-5 bg-primary text-darken rounded-full">Read More</a>
-                    </div>
+            </a>
+            <a href="" class="text-white bg-[url('../img/history.jpg')] bg-cover rounded-lg bg-center">
+                <div class="w-full h-full backdrop-brightness-50 rounded-lg px-5 pb-7">
+                    <p class="py-7 lg:p-7 text-center font-semibold text-xl">History</p>
+                    <hr>
+                    <p class="text-base font-extralight text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam ipsa dolorem fugiat reprehenderit accusamus quas, veritatis necessitatibus totam delectus.</p>
                 </div>
-                <div class="mx-auto flex gap-1 items-center mt-10 justify-center">
-                    <a href="#" class="px-4 py-2 bg-primary text-darken rounded-lg shadow-lg font-bold border-2 border-stone-500">1</a>
-                    <a href="#" class="px-4 py-2 bg-primary text-darken rounded-lg shadow-md">2</a>
-                    <a href="#" class="px-4 py-2 bg-primary text-darken rounded-lg shadow-md">3</a>
-                    <a href="#" class="px-4 py-2 bg-dark text-primary rounded-lg shadow-md">&raquo;</a>
+            </a>
+            <a href="" class="text-white bg-[url('../img/fantasy.jpeg')] bg-cover rounded-lg bg-center">
+                <div class="w-full h-full backdrop-brightness-50 rounded-lg px-5 pb-7">
+                    <p class="py-7 lg:p-7 text-center font-semibold text-xl">Fantasy</p>
+                    <hr>
+                    <p class="text-base font-extralight text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam ipsa dolorem fugiat reprehenderit accusamus quas, veritatis necessitatibus totam delectus.</p>
                 </div>
-            </div>
-            <div class="w-full lg:w-[30%] rounded-lg shadow-lg overflow-hidden px-5 py-5 self-start">
-                <h2 class="text-lg lg:text-xl font-bold mb-5 text-darken">Top User : </h2>
-                <a href="profile.html">
-                    <div class="flex gap-3 items-center mb-5">
-                        <img src="dist/img/avatar/maleProfile.png" alt="" class="w-16 h-16 rounded-full object-cover object-top border-2 border-primary">
-                        <div class="text">
-                            <h6 class="text-darken font-semibold">Azkazikna Ageung Laksana</h6>
-                            <p class="text-sm text-dark">Total Post: 16</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="profile.html">
-                    <div class="flex gap-3 items-center mb-5">
-                        <img src="dist/img/avatar/femaleProfile.png" alt="" class="w-16 h-16 rounded-full object-cover object-top border-2 border-primary">
-                        <div class="text">
-                            <h6 class="text-darken font-semibold">Atiyah Ummi Sholihat</h6>
-                            <p class="text-sm text-dark">Total Post: 13</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="profile.html">
-                    <div class="flex gap-3 items-center mb-5">
-                        <img src="dist/img/avatar/maleProfile2.png" alt="" class="w-16 h-16 rounded-full object-cover object-top border-2 border-primary">
-                        <div class="text">
-                            <h6 class="text-darken font-semibold">Pramdhanni Dwi Putra Bintang</h6>
-                            <p class="text-sm text-dark">Total Post: 12</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            </a>
+            <a href="" class="text-white bg-[url('../img/romance.jpeg')] bg-cover rounded-lg bg-center">
+                <div class="w-full h-full backdrop-brightness-50 rounded-lg px-5 pb-7">
+                    <p class="py-7 lg:p-7 text-center font-semibold text-xl">Romance</p>
+                    <hr>
+                    <p class="text-base font-extralight text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam ipsa dolorem fugiat reprehenderit accusamus quas, veritatis necessitatibus totam delectus.</p>
+                </div>
+            </a>
+            <a href="" class="text-white bg-[url('../img/adventure.jpg')] bg-cover rounded-lg bg-center">
+                <div class="w-full h-full backdrop-brightness-50 rounded-lg px-5 pb-7">
+                    <p class="py-7 lg:p-7 text-center font-semibold text-xl">Adventure</p>
+                    <hr>
+                    <p class="text-base font-extralight text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam ipsa dolorem fugiat reprehenderit accusamus quas, veritatis necessitatibus totam delectus.</p>
+                </div>
+            </a>
+            <a href="" class="text-white bg-[url('../img/family.jpg')] bg-cover rounded-lg bg-center">
+                <div class="w-full h-full backdrop-brightness-50 rounded-lg px-5 pb-7">
+                    <p class="py-7 lg:p-7 text-center font-semibold text-xl">Family</p>
+                    <hr>
+                    <p class="text-base font-extralight text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam ipsa dolorem fugiat reprehenderit accusamus quas, veritatis necessitatibus totam delectus.</p>
+                </div>
+            </a>
+            <a href="" class="text-white bg-[url('../img/novel.jpg')] bg-cover rounded-lg bg-center">
+                <div class="w-full h-full backdrop-brightness-50 rounded-lg px-5 pb-7">
+                    <p class="py-7 lg:p-7 text-center font-semibold text-xl">Novel</p>
+                    <hr>
+                    <p class="text-base font-extralight text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam ipsa dolorem fugiat reprehenderit accusamus quas, veritatis necessitatibus totam delectus.</p>
+                </div>
+            </a>
         </div>
     </section>
     <!-- All book section end -->
