@@ -741,6 +741,7 @@ video {
   margin-top: 0.25rem;
 }
 
+<<<<<<< HEAD
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -757,6 +758,8 @@ video {
   margin-left: 2.5rem;
 }
 
+=======
+>>>>>>> 1d610751ba5ba06c03974c3c686c837e2f38e1ed
 .block {
   display: block;
 }
@@ -833,6 +836,7 @@ video {
   height: 100%;
 }
 
+<<<<<<< HEAD
 .h-10 {
   height: 2.5rem;
 }
@@ -841,6 +845,8 @@ video {
   height: 14rem;
 }
 
+=======
+>>>>>>> 1d610751ba5ba06c03974c3c686c837e2f38e1ed
 .w-full {
   width: 100%;
 }
@@ -934,10 +940,13 @@ video {
   list-style-type: none;
 }
 
+<<<<<<< HEAD
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+=======
+>>>>>>> 1d610751ba5ba06c03974c3c686c837e2f38e1ed
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1153,6 +1162,7 @@ video {
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-blue-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 234 254 / var(--tw-bg-opacity));
@@ -1167,6 +1177,8 @@ video {
   --tw-bg-opacity: 40%;
 }
 
+=======
+>>>>>>> 1d610751ba5ba06c03974c3c686c837e2f38e1ed
 .bg-\[url\(\'\.\.\/img\/education\.jpg\'\)\] {
   background-image: url('../img/education.jpg');
 }
@@ -2168,6 +2180,15 @@ table.dataTable.no-footer {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2395,6 +2416,14 @@ table.dataTable.no-footer {
     -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
             backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   }
+<<<<<<< HEAD
+=======
+
+  @media (prefers-color-scheme: dark) {
+    .lg\:dark\:border-none {
+      border-style: none;
+    }
+>>>>>>> 1d610751ba5ba06c03974c3c686c837e2f38e1ed
 
   .dark .lg\:dark\:border-none {
     border-style: none;
