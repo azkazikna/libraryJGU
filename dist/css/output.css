@@ -2416,14 +2416,11 @@ table.dataTable.no-footer {
     -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
             backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   }
-<<<<<<< HEAD
-=======
 
   @media (prefers-color-scheme: dark) {
     .lg\:dark\:border-none {
       border-style: none;
     }
->>>>>>> 1d610751ba5ba06c03974c3c686c837e2f38e1ed
 
   .dark .lg\:dark\:border-none {
     border-style: none;
