@@ -17,8 +17,15 @@
     <link rel="stylesheet" href="dist/css/swiper.min.css"/>
     <!-- Custom Style -->
     <link rel="stylesheet" href="dist/css/output.css">
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
-<body class="font-poppins bg-[#FEFDF9] overflow-x-hidden relative w-full" data-barba="wrapper">
+<body class="font-poppins bg-[#FEFDF9] overflow-x-hidden relative w-full dark:bg-bgdark" data-barba="wrapper">
 
     <!-- transition start -->
     <div class="load-container">
@@ -33,7 +40,7 @@
                 <div class="px-4">
                     <a href="index.html" class="flex items-center">
                         <img src="dist/icon/casual-life-3d-yellow-pink-and-beige-books-lying-on-top-of-each-other.png" alt="" class="w-20 lg:w-24">
-                        <h1 class="text-2xl lg:text-3xl font-bold text-primary"><span class="text-darken">see</span>BOOK</h1>
+                        <h1 class="text-2xl lg:text-3xl font-bold text-primary"><span class="text-darken dark:text-white">see</span>BOOK</h1>
                     </a>
                 </div>
                 <div class="flex items-center px-4">
@@ -43,12 +50,20 @@
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-[#FEFDF9] backdrop-blur-sm shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:border lg:dark:border-none z-[999] mt-5 lg:mt-0">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-[#FEFDF9] backdrop-blur-sm shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:backdrop-blur-0 lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-bgdark dark:bg-opacity-70 lg:dark:bg-transparent dark:border lg:dark:border-none z-[999] mt-5 lg:mt-0">
                         <ul class="block lg:flex">
                             <li class="group" id="subnav"><a href="index.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Home</a></li>
                             <li class="group" id="subnav"><a href="allbook.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">All Books</a></li>
                             <li class="group" id="subnav"><a href="blog.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Blog</a></li>
                             <li class="group" id="subnav"><a href="categories.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Category</a></li>
+                            <li class="ml-10 mt-4 lg:mt-1">
+                                <input type="checkbox" class="opacity-0 absolute top-0 group" id="dark-toggle">
+                                <label for="dark-toggle" class="w-[50px] h-[26px] bg-primary flex rounded-full items-center justify-between p-[5px] relative scale-150 cursor-pointer transition duration-300 ease-linear">
+                                    <i class="fas fa-moon text-bgdark"></i>
+                                    <i class="fa-solid fa-sun text-[#FEFDF9] text-sm"></i>
+                                    <div class='ball w-5 h-5 bg-[#FEFDF9] absolute t-[2px] l-[2px] rounded-full transition duration-200 ease-linear'>
+                                </label>
+                            </li>
                             <hr class="text-dark mt-5 mb-2 lg:hidden">
                             <li class="group" id="subnav"><a href="login.html" class="text-base text-darken font-medium py-2 justify-center flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out lg:hidden">Login</a></li>
                             <li class="group" id="subnav"><a href="register.html" class="text-base font-medium text-darken px-4 py-2 bg-primary shadow-lg lg:hidden mx-8 my-2 block rounded-sm text-center">Create account</a></li>
@@ -56,7 +71,7 @@
                     </nav>
                 </div>
                 <div class="lg:flex items-center gap-10 hidden">
-                    <a href="login.html" class="text-base font-medium text-darken">Login</a>
+                    <a href="login.html" class="text-base font-medium text-darken dark:text-white">Login</a>
                     <a href="register.html" class="text-base font-medium text-darken px-4 py-2 bg-primary shadow-lg rounded-full">Create account</a>
                 </div>
             </div>
@@ -71,20 +86,20 @@
         <div class="container px-4 lg:px-5 xl:px-0 mx-auto lg:flex items-center justify-between gap-20 relative">
             <img src="dist/img/casual-life-3d-young-woman-imagining-things-while-reading-e-book.png" alt="" class="absolute -z-10 lg:left-1/2 w-[600px] xl:w-[750px] -right-[70%] lg:bottom-0">
             <div class="w-full">
-                <p class="text-dark uppercase text-lg">Read with desire</p>
-                <h1 class="text-dark text-6xl lg:text-7xl xl:text-8xl font-bold mt-7">Take a look <br> it's in a <span class="text-darken">BOOK</span></h1>
-                <p class="text-lg text-dark mt-4">Knowledge is a seed that grows when you read.</p>
+                <p class="text-dark uppercase text-lg dark:text-txtdark">Read with desire</p>
+                <h1 class="text-dark text-6xl lg:text-7xl xl:text-8xl font-bold mt-7 dark:text-txtdark">Take a look <br> it's in a <span class="text-darken dark:text-white">BOOK</span></h1>
+                <p class="text-lg text-dark mt-4 dark:text-txtdark">Knowledge is a seed that grows when you read.</p>
                 <form action="" class="relative">
-                    <input type="text" name="" id="serach" class="rounded-full w-full shadow-lg mt-10 p-6 text-sm lg:text-base border lg:border-0" placeholder="Search books, author, categories ...">
+                    <input type="text" name="" id="search" class="bg-white rounded-full w-full shadow-lg mt-10 p-6 text-sm lg:text-base border lg:border-0" placeholder="Search books, author, categories ...">
                     <input type="submit" class="cursor-pointer px-6 py-2 rounded-full bg-primary text-base lg:text-lg text-darken absolute top-1/2 right-[30px]" value="Search">
                 </form>
                 <div class="mt-14 w-full xl:w-[60%]">
-                    <p class="text-dark uppercase mb-3">Popular books</p>
+                    <p class="text-dark uppercase mb-3 dark:text-white">Popular books</p>
                     <div class="flex gap-4 items-center">
                         <img src="dist/img/book/3._SY475_.jpg" alt="" class="w-28 h-36">
                         <div class="">
-                            <h5 class="text-lg text-darken font-medium">Read - <br>You'd be surprised what You find</h5>
-                            <p class="text-sm text-dark">From top - rated books</p>
+                            <h5 class="text-lg text-darken font-medium dark:text-white">Read - <br>You'd be surprised what You find</h5>
+                            <p class="text-sm text-dark dark:text-txtdark">From top - rated books</p>
                         </div>
                         <a href="#" class="ml-3 py-2 px-3 rounded-full bg-primary"><i class="fa-solid fa-arrow-right text-white text-3xl"></i></a>
                     </div>
@@ -100,7 +115,7 @@
     <section id="category" class="pb-32 lg:pb-38">
         <div class="container px-4 xl:px-0 mx-auto">
             <div class="flex justify-between items-center">
-                <h1 class="text-darken text-4xl font-bold">Book <span class="text-primary">Categories</span></h1>
+                <h1 class="text-darken text-4xl font-bold dark:text-white">Book <span class="text-primary">Categories</span></h1>
                 <a href="categories.html" class="text-dark">View All <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="swiper1 mt-10">
@@ -122,7 +137,7 @@
     <section id="category" class="pb-32 lg:pb-38">
         <div class="container px-4 xl:px-0 mx-auto">
             <div class="flex justify-between items-center">
-                <h1 class="text-darken text-4xl font-bold">Almost <span class="text-primary">Popular</span></h1>
+                <h1 class="text-darken text-4xl font-bold dark:text-white">Almost <span class="text-primary">Popular</span></h1>
                 <a href="#" class="text-dark">View All <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="swiper2 mt-10">
@@ -132,7 +147,7 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/3._SY475_.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Sorcerer Stone</h3>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Sorcerer Stone</h3>
                             <p class="text-sm text-dark">Fantasy</p>
                         </div>
                     </a>
@@ -141,8 +156,8 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/hp_goblet.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Goblet of Fire</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Goblet of Fire</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     </a>
                     <a href="book.html" class="swiper-slide">
@@ -150,8 +165,8 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/hp_halfblood.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Half-Blood Prince</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Half-Blood Prince</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     </a>
                     <a href="book.html" class="swiper-slide">
@@ -159,8 +174,8 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/hp_deathly.webp" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Deathly Hallows</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Deathly Hallows</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     </a>
                     <a href="book.html" class="swiper-slide">
@@ -168,8 +183,8 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/hp_philosoper.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Philosopher's Stone</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Philosopher's Stone</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     </a>
                     <a href="book.html" class="swiper-slide">
@@ -177,8 +192,8 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/hp_chamber.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Chamber of Secrets</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Chamber of Secrets</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     </a>
                 </div>
@@ -191,8 +206,8 @@
     <section id="category" class="pb-32 lg:pb-38">
         <div class="container px-4 xl:px-0 mx-auto">
             <div class="flex justify-between items-center">
-                <h1 class="text-darken text-4xl font-bold">New <span class="text-primary">Release</span></h1>
-                <a href="#" class="text-dark">View All <i class="fa-solid fa-arrow-right"></i></a>
+                <h1 class="text-darken text-4xl font-bold dark:text-white">New <span class="text-primary">Release</span></h1>
+                <a href="#" class="text-dark dark:text-txtdark">View All <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="swiper2 mt-10">
                 <div class="swiper-wrapper">
@@ -201,16 +216,16 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/3._SY475_.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Sorcerer Stone</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Sorcerer Stone</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     <a href="book.html" class="swiper-slide">
                         <div class="group">
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/hp_goblet.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Goblet of Fire</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Goblet of Fire</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     </a>
                     <a href="book.html" class="swiper-slide">
@@ -218,8 +233,8 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/hp_halfblood.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Half-Blood Prince</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Half-Blood Prince</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     </a>
                     <a href="book.html" class="swiper-slide">
@@ -227,8 +242,8 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/hp_deathly.webp" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Deathly Hallows</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Deathly Hallows</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     </a>
                     <a href="book.html" class="swiper-slide">
@@ -236,8 +251,8 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/hp_philosoper.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Philosopher's Stone</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Philosopher's Stone</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     </a>
                     <a href="book.html" class="swiper-slide">
@@ -245,8 +260,8 @@
                             <div class="overflow-hidden rounded-lg shadow-lg">
                                 <img src="dist/img/book/hp_chamber.jpg" alt="" class="w-full group-hover:scale-110 group-hover:rotate-3 transition duration-500 ease-in-out object-cover">
                             </div>
-                            <h3 class="text-darken font-medium text-xl mt-2">Harry Potter and The Chamber of Secrets</h3>
-                            <p class="text-sm text-dark">Fantasy</p>
+                            <h3 class="text-darken dark:text-white font-medium text-xl mt-2">Harry Potter and The Chamber of Secrets</h3>
+                            <p class="text-sm text-dark dark:text-txtdark">Fantasy</p>
                         </div>
                     </a>
                 </div>
@@ -256,9 +271,9 @@
     <!-- new release books section end-->
 
     <!-- footer start -->
-    <footer class="py-8 bg-primary">
+    <footer class="py-8 bg-primary dark:bg-bgdarken">
         <div class="container mx-auto px-4">
-            <p class="text-darken text-center">&copy; Design by <a href="https://www.facebook.com/tswndr/" class="font-bold">Toby Suwindra</a> Built by <a href="https://azkazikna.github.io/" class="font-bold">Azkazikna Ageung Laksana</a> 2022. All rights reserved</p>
+            <p class="text-darken text-center dark:text-white">&copy; Design by <a href="https://www.facebook.com/tswndr/" class="font-bold">Toby Suwindra</a> Built by <a href="https://azkazikna.github.io/" class="font-bold">Azkazikna Ageung Laksana</a> 2022. All rights reserved</p>
         </div>
     </footer>
     <!-- footer end -->

@@ -17,8 +17,15 @@
     <link rel="stylesheet" href="dist/css/swiper.min.css"/>
     <!-- Custom Style -->
     <link rel="stylesheet" href="dist/css/output.css">
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
-<body class="font-poppins bg-[#FEFDF9] overflow-x-hidden relative w-full" data-barba="wrapper">
+<body class="font-poppins bg-[#FEFDF9] overflow-x-hidden relative w-full dark:bg-bgdark" data-barba="wrapper">
 
     <!-- transition start -->
     <div class="load-container">
@@ -33,7 +40,7 @@
                 <div class="px-4">
                     <a href="index.html" class="flex items-center">
                         <img src="dist/icon/casual-life-3d-yellow-pink-and-beige-books-lying-on-top-of-each-other.png" alt="" class="w-20 lg:w-24">
-                        <h1 class="text-2xl lg:text-3xl font-bold text-primary"><span class="text-darken">see</span>BOOK</h1>
+                        <h1 class="text-2xl lg:text-3xl font-bold text-primary"><span class="text-darken dark:text-white">see</span>BOOK</h1>
                     </a>
                 </div>
                 <div class="flex items-center px-4">
@@ -43,12 +50,20 @@
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-[#FEFDF9] shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:border lg:dark:border-none z-[999] mt-5 lg:mt-0">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-[#FEFDF9] backdrop-blur-sm shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:backdrop-blur-0 lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-bgdark dark:bg-opacity-70 lg:dark:bg-transparent dark:border lg:dark:border-none z-[999] mt-5 lg:mt-0">
                         <ul class="block lg:flex">
                             <li class="group" id="subnav"><a href="index.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Home</a></li>
                             <li class="group" id="subnav"><a href="allbook.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">All Books</a></li>
                             <li class="group" id="subnav"><a href="blog.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Blog</a></li>
-                            <li class="group" id="subnav"><a href="categories.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Categories</a></li>
+                            <li class="group" id="subnav"><a href="categories.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Category</a></li>
+                            <li class="ml-10 mt-4 lg:mt-1">
+                                <input type="checkbox" class="opacity-0 absolute top-0 group" id="dark-toggle">
+                                <label for="dark-toggle" class="w-[50px] h-[26px] bg-primary flex rounded-full items-center justify-between p-[5px] relative scale-150 cursor-pointer transition duration-300 ease-linear">
+                                    <i class="fas fa-moon text-bgdark"></i>
+                                    <i class="fa-solid fa-sun text-[#FEFDF9] text-sm"></i>
+                                    <div class='ball w-5 h-5 bg-[#FEFDF9] absolute t-[2px] l-[2px] rounded-full transition duration-200 ease-linear'>
+                                </label>
+                            </li>
                             <hr class="text-dark mt-5 mb-2 lg:hidden">
                             <li class="group" id="subnav"><a href="login.html" class="text-base text-darken font-medium py-2 justify-center flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out lg:hidden">Login</a></li>
                             <li class="group" id="subnav"><a href="register.html" class="text-base font-medium text-darken px-4 py-2 bg-primary shadow-lg lg:hidden mx-8 my-2 block rounded-sm text-center">Create account</a></li>
@@ -56,7 +71,7 @@
                     </nav>
                 </div>
                 <div class="lg:flex items-center gap-10 hidden">
-                    <a href="login.html" class="text-base font-medium text-darken">Login</a>
+                    <a href="login.html" class="text-base font-medium text-darken dark:text-white">Login</a>
                     <a href="register.html" class="text-base font-medium text-darken px-4 py-2 bg-primary shadow-lg rounded-full">Create account</a>
                 </div>
             </div>
@@ -68,68 +83,68 @@
 
     <!-- Main section register start -->
     <section id="register" class="py-32 lg:py-40 px-4">
-        <div class="container mx-auto flex flex-col lg:flex-row gap-12 lg:gap-0 bg-white items-center rounded-2xl px-4 lg:px-14 py-14 lg:py-24 shadow-md justify-center">
+        <div class="container mx-auto flex flex-col lg:flex-row gap-12 lg:gap-0 bg-white dark:bg-[#01060f] items-center rounded-2xl px-4 lg:px-14 py-14 lg:py-24 shadow-md justify-center">
             <div class="w-full">
                 <img src="dist/img/casual-life-3d-young-couple-sitting-on-the-floor-and-reading-books.png" alt="" class="w-[600px] mx-auto">
             </div>
             <div class="w-full">
-                <h5 class="font-bold text-2xl text-center text-darken mb-7">Create your Free Account</h5>
+                <h5 class="font-bold text-2xl text-center text-darken dark:text-white mb-7">Create your Free Account</h5>
                 <form action="">
-                    <h4 class="font-semibold text-darken mt-7">Personal Information</h4>
+                    <h4 class="font-semibold text-darken dark:text-white mt-7">Personal Information</h4>
                     <div class="flex flex-col lg:flex-row gap-2 mt-5">
                         <div class="form-group w-full">
-                            <label for="firstname" class="text-dark">First Name <span class="text-red-500">*</span></label><br>
-                            <input type="text" name="firstname" id="firstname" class="bg-white border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your first name here">
+                            <label for="firstname" class="text-dark dark:text-txtdark">First Name <span class="text-red-500">*</span></label><br>
+                            <input type="text" name="firstname" id="firstname" class="bg-white dark:text-txtdark border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your first name here">
                         </div>
                         <div class="form-group w-full">
-                            <label for="lastname" class="text-dark">Last Name <span class="text-red-500">*</span></label><br>
-                            <input type="text" name="lastname" id="lastname" class="bg-white border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your last name here">
+                            <label for="lastname" class="text-dark dark:text-txtdark">Last Name <span class="text-red-500">*</span></label><br>
+                            <input type="text" name="lastname" id="lastname" class="bg-white dark:text-txtdark border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your last name here">
                         </div>
                     </div>
                     <div class="flex flex-col lg:flex-row gap-2 mt-2 lg:mt-5">
                         <div class="form-group w-full">
-                            <label for="name" class="text-dark">Gender <span class="text-red-500">*</span></label><br>
-                            <input type="text" name="name" id="name" class="bg-white border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your Full Name here">
+                            <label for="name" class="text-dark dark:text-txtdark">Gender <span class="text-red-500">*</span></label><br>
+                            <input type="text" name="name" id="name" class="bg-white dark:text-txtdark border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your Full Name here">
                         </div>
                         <div class="form-group w-full">
-                            <label for="birth" class="text-dark">Date of birth <span class="text-red-500">*</span></label><br>
-                            <input type="date" name="birth" id="birth" class="bg-white border bg-opacity-[40%] p-4 rounded-xl w-full text-dark uppercase">
+                            <label for="birth" class="text-dark dark:text-txtdark">Date of birth <span class="text-red-500">*</span></label><br>
+                            <input type="date" name="birth" id="birth" class="bg-white dark:text-txtdark border bg-opacity-[40%] p-4 rounded-xl w-full text-dark uppercase">
                         </div>
                     </div>
-                    <h4 class="font-semibold text-darken mt-7">Contact Information</h4>
+                    <h4 class="font-semibold text-darken dark:text-white mt-7">Contact Information</h4>
                     <div class="flex flex-col lg:flex-row gap-2 mt-5">
                         <div class="form-group w-full">
-                            <label for="email" class="text-dark">Email Address <span class="text-red-500">*</span></label><br>
-                            <input type="email" name="email" id="email" class="bg-white border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your Email here">
+                            <label for="email" class="text-dark dark:text-txtdark">Email Address <span class="text-red-500">*</span></label><br>
+                            <input type="email" name="email" id="email" class="bg-white dark:text-txtdark border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your Email here">
                         </div>
                         <div class="form-group w-full relative">
-                            <label for="password" class="text-dark">Password <span class="text-red-500">*</span></label><br>
-                            <input type="password" name="password" id="password" class="bg-white border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your Password here">
-                            <span toggle="#password" class="fa-solid fa-eye field-icon toggle-password absolute top-1/2 right-5 text-darken text-xl cursor-pointer"></span>
+                            <label for="password" class="text-dark dark:text-txtdark">Password <span class="text-red-500">*</span></label><br>
+                            <input type="password" name="password" id="password" class="bg-white dark:text-txtdark border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your Password here">
+                            <span toggle="#password" class="fa-solid fa-eye field-icon toggle-password absolute top-1/2 right-5 text-darken dark:text-white text-xl cursor-pointer"></span>
                         </div>
                     </div>
                     <div class="flex flex-col lg:flex-row gap-2 mt-2 lg:mt-5">
                         <div class="form-group w-full">
-                            <label for="telephone" class="text-dark">Telephone <span class="text-red-500">*</span></label><br>
-                            <input type="number" name="telephone" id="telephone" class="bg-white border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your telephone here">
+                            <label for="telephone" class="text-dark dark:text-txtdark">Telephone <span class="text-red-500">*</span></label><br>
+                            <input type="number" name="telephone" id="telephone" class="bg-white dark:text-txtdark border bg-opacity-[40%] p-4 rounded-xl w-full" placeholder="Enter your telephone here">
                         </div>
                         <div class="form-group w-full relative">
-                            <label for="mobile" class="text-dark">Mobile <span class="text-red-500 text-xs">(optional)</span></label><br>
-                            <input type="number" name="mobile" id="mobile" class="bg-white border bg-opacity-[40%] p-4 pl-14 rounded-xl w-full outline-0" placeholder="Enter your mobile here">
-                            <div class="text-darken bg-gray-200 top-6 rounded-l-xl absolute h-[57px] px-2 pt-4">+62</div>
+                            <label for="mobile" class="text-dark dark:text-txtdark">Mobile <span class="text-red-500 text-xs">(optional)</span></label><br>
+                            <input type="number" name="mobile" id="mobile" class="bg-white dark:text-txtdark border bg-opacity-[40%] p-4 pl-14 rounded-xl w-full outline-0" placeholder="Enter your mobile here">
+                            <div class="text-darken dark:text-white bg-gray-200 top-6 rounded-l-xl absolute h-[57px] px-2 pt-4">+62</div>
                         </div>
                     </div>
                     <div class="flex justify-center mt-10">
                         <button type="submit" class="py-3 px-5 bg-primary text-darken text-lg rounded-lg w-full">Create Account</button>
                     </div>
                 </form>
-                <p class="text-sm text-darken text-center mt-4">Already have an account? <a href="login.html" class="text-primary">Log In</a></p>
+                <p class="text-sm text-darken dark:text-white text-center mt-4">Already have an account? <a href="login.html" class="text-primary">Log In</a></p>
                 <hr class="mt-5 mb-3">
-                <p class="text-sm text-dark text-center">Or Register with</p>
+                <p class="text-sm text-dark text-center dark:text-txtdark">Or Register with</p>
                 <div class="flex justify-center mt-5 gap-7">
-                    <a href="" class="shadow-md p-1 rounded-full"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg></a>
-                    <a href="" class="shadow-md p-1 rounded-full"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><linearGradient id="Ld6sqrtcxMyckEl6xeDdMa" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"/><stop offset="1" stop-color="#007ad9"/></linearGradient><path fill="url(#Ld6sqrtcxMyckEl6xeDdMa)" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"/><path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"/></svg></a>
-                    <a href="" class="shadow-md p-1 rounded-full"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="48px" height="48px"><path d="M 44.527344 34.75 C 43.449219 37.144531 42.929688 38.214844 41.542969 40.328125 C 39.601563 43.28125 36.863281 46.96875 33.480469 46.992188 C 30.46875 47.019531 29.691406 45.027344 25.601563 45.0625 C 21.515625 45.082031 20.664063 47.03125 17.648438 47 C 14.261719 46.96875 11.671875 43.648438 9.730469 40.699219 C 4.300781 32.429688 3.726563 22.734375 7.082031 17.578125 C 9.457031 13.921875 13.210938 11.773438 16.738281 11.773438 C 20.332031 11.773438 22.589844 13.746094 25.558594 13.746094 C 28.441406 13.746094 30.195313 11.769531 34.351563 11.769531 C 37.492188 11.769531 40.8125 13.480469 43.1875 16.433594 C 35.421875 20.691406 36.683594 31.78125 44.527344 34.75 Z M 31.195313 8.46875 C 32.707031 6.527344 33.855469 3.789063 33.4375 1 C 30.972656 1.167969 28.089844 2.742188 26.40625 4.78125 C 24.878906 6.640625 23.613281 9.398438 24.105469 12.066406 C 26.796875 12.152344 29.582031 10.546875 31.195313 8.46875 Z"/></svg></a>
+                    <a href="" class="shadow-md dark:border-2 p-1 rounded-full"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg></a>
+                    <a href="" class="shadow-md dark:border-2 p-1 rounded-full"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><linearGradient id="Ld6sqrtcxMyckEl6xeDdMa" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"/><stop offset="1" stop-color="#007ad9"/></linearGradient><path fill="url(#Ld6sqrtcxMyckEl6xeDdMa)" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"/><path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"/></svg></a>
+                    <a href="" class="shadow-md dark:border-2 p-1 rounded-full fill-black dark:fill-white"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="48px" height="48px"><path d="M 44.527344 34.75 C 43.449219 37.144531 42.929688 38.214844 41.542969 40.328125 C 39.601563 43.28125 36.863281 46.96875 33.480469 46.992188 C 30.46875 47.019531 29.691406 45.027344 25.601563 45.0625 C 21.515625 45.082031 20.664063 47.03125 17.648438 47 C 14.261719 46.96875 11.671875 43.648438 9.730469 40.699219 C 4.300781 32.429688 3.726563 22.734375 7.082031 17.578125 C 9.457031 13.921875 13.210938 11.773438 16.738281 11.773438 C 20.332031 11.773438 22.589844 13.746094 25.558594 13.746094 C 28.441406 13.746094 30.195313 11.769531 34.351563 11.769531 C 37.492188 11.769531 40.8125 13.480469 43.1875 16.433594 C 35.421875 20.691406 36.683594 31.78125 44.527344 34.75 Z M 31.195313 8.46875 C 32.707031 6.527344 33.855469 3.789063 33.4375 1 C 30.972656 1.167969 28.089844 2.742188 26.40625 4.78125 C 24.878906 6.640625 23.613281 9.398438 24.105469 12.066406 C 26.796875 12.152344 29.582031 10.546875 31.195313 8.46875 Z"/></svg></a>
                 </div>
             </div>
         </div>

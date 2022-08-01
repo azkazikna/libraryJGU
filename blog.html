@@ -17,8 +17,15 @@
     <link rel="stylesheet" href="dist/css/swiper.min.css"/>
     <!-- Custom Style -->
     <link rel="stylesheet" href="dist/css/output.css">
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
-<body class="font-poppins bg-[#FEFDF9] overflow-x-hidden relative w-full" data-barba="wrapper">
+<body class="font-poppins bg-[#FEFDF9] overflow-x-hidden relative w-full dark:bg-bgdark" data-barba="wrapper">
 
     <!-- transition start -->
     <div class="load-container">
@@ -33,7 +40,7 @@
                 <div class="px-4">
                     <a href="index.html" class="flex items-center">
                         <img src="dist/icon/casual-life-3d-yellow-pink-and-beige-books-lying-on-top-of-each-other.png" alt="" class="w-20 lg:w-24">
-                        <h1 class="text-2xl lg:text-3xl font-bold text-primary"><span class="text-darken">see</span>BOOK</h1>
+                        <h1 class="text-2xl lg:text-3xl font-bold text-primary"><span class="text-darken dark:text-white">see</span>BOOK</h1>
                     </a>
                 </div>
                 <div class="flex items-center px-4">
@@ -43,12 +50,20 @@
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-[#FEFDF9] shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:border lg:dark:border-none z-[999] mt-5 lg:mt-0">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-[#FEFDF9] backdrop-blur-sm shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:backdrop-blur-0 lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-bgdark dark:bg-opacity-70 lg:dark:bg-transparent dark:border lg:dark:border-none z-[999] mt-5 lg:mt-0">
                         <ul class="block lg:flex">
                             <li class="group" id="subnav"><a href="index.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Home</a></li>
                             <li class="group" id="subnav"><a href="allbook.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">All Books</a></li>
                             <li class="group" id="subnav"><a href="blog.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Blog</a></li>
-                            <li class="group" id="subnav"><a href="categories.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Categories</a></li>
+                            <li class="group" id="subnav"><a href="categories.html" class="text-base text-darken font-medium py-2 mx-8 flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out">Category</a></li>
+                            <li class="ml-10 mt-4 lg:mt-1">
+                                <input type="checkbox" class="opacity-0 absolute top-0 group" id="dark-toggle">
+                                <label for="dark-toggle" class="w-[50px] h-[26px] bg-primary flex rounded-full items-center justify-between p-[5px] relative scale-150 cursor-pointer transition duration-300 ease-linear">
+                                    <i class="fas fa-moon text-bgdark"></i>
+                                    <i class="fa-solid fa-sun text-[#FEFDF9] text-sm"></i>
+                                    <div class='ball w-5 h-5 bg-[#FEFDF9] absolute t-[2px] l-[2px] rounded-full transition duration-200 ease-linear'>
+                                </label>
+                            </li>
                             <hr class="text-dark mt-5 mb-2 lg:hidden">
                             <li class="group" id="subnav"><a href="login.html" class="text-base text-darken font-medium py-2 justify-center flex group-hover:text-primary dark:text-white transition duration-500 ease-in-out lg:hidden">Login</a></li>
                             <li class="group" id="subnav"><a href="register.html" class="text-base font-medium text-darken px-4 py-2 bg-primary shadow-lg lg:hidden mx-8 my-2 block rounded-sm text-center">Create account</a></li>
@@ -56,7 +71,7 @@
                     </nav>
                 </div>
                 <div class="lg:flex items-center gap-10 hidden">
-                    <a href="login.html" class="text-base font-medium text-darken">Login</a>
+                    <a href="login.html" class="text-base font-medium text-darken dark:text-white">Login</a>
                     <a href="register.html" class="text-base font-medium text-darken px-4 py-2 bg-primary shadow-lg rounded-full">Create account</a>
                 </div>
             </div>
@@ -69,7 +84,7 @@
     <!-- All book section start -->
     <section id="allbook" class="py-32 lg:py-40">
         <div class="container mx-auto mb-10 px-4">
-            <h1 class="text-dark text-4xl lg:text-5xl font-bold">All <span class="text-darken">Post</span> :</h1>
+            <h1 class="text-dark text-4xl lg:text-5xl font-bold dark:text-txtdark">All <span class="text-darken dark:text-white">Post</span> :</h1>
             <form action="" class="relative">
                 <input type="text" name="keyword" id="search" class="rounded-full w-full shadow-lg mt-10 p-6 text-sm lg:text-base" placeholder="Search books, author, categories ..." autofocus autocomplete="off">
                 <input type="submit" class="cursor-pointer px-6 py-2 rounded-full bg-primary text-base lg:text-lg text-darken absolute top-1/2 right-[30px]" value="Search">
@@ -77,21 +92,21 @@
         </div>
         <div class="container mx-auto px-4 flex flex-col lg:flex-row gap-5">
             <div class="w-full lg:w-[70%]">
-                <div class="w-full rounded-lg shadow-lg overflow-hidden mb-7">
+                <div class="w-full rounded-lg shadow-lg dark:border overflow-hidden mb-7">
                     <img src="dist/img/post/sung-jin-woo.jpg" alt="" class="w-full h-64 object-cover object-center">
                     <div class="body px-5 py-5 !pb-7">
-                        <h1 class="text-darken text-2xl lg:text-3xl font-bold">Is Sung Jin Woo The Best Hunter in The World?</h1>
-                        <p class="text-dark text-sm mt-1">by <a href="profile.html" class="text-darken">Azkazikna Ageung Laksana</a> in <a href="#" class="text-darken">Manhwa</a></p>
-                        <p class="text-darken mt-2 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum, est nulla, optio recusandae ipsa et praesentium ad tenetur itaque laborum nobis iusto laudantium quisquam nemo dolorum! Labore exercitationem pariatur amet incidunt molestias facilis sit nulla possimus voluptatum officiis est corrupti voluptates, voluptate quas inventore repudiandae consequatur voluptas? Eius, ratione?</p>
+                        <h1 class="text-darken dark:text-white text-2xl lg:text-3xl font-bold">Is Sung Jin Woo The Best Hunter in The World?</h1>
+                        <p class="text-dark text-sm mt-1 dark:text-txtdark">by <a href="profile.html" class="text-darken dark:text-white">Azkazikna Ageung Laksana</a> in <a href="#" class="text-darken dark:text-white">Manhwa</a></p>
+                        <p class="text-darken dark:text-white mt-2 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum, est nulla, optio recusandae ipsa et praesentium ad tenetur itaque laborum nobis iusto laudantium quisquam nemo dolorum! Labore exercitationem pariatur amet incidunt molestias facilis sit nulla possimus voluptatum officiis est corrupti voluptates, voluptate quas inventore repudiandae consequatur voluptas? Eius, ratione?</p>
                         <a href="#" class="py-2 px-5 bg-primary text-darken rounded-full">Read More</a>
                     </div>
                 </div>
-                <div class="w-full rounded-lg shadow-lg overflow-hidden mb-7">
+                <div class="w-full rounded-lg shadow-lg dark:border overflow-hidden mb-7">
                     <img src="dist/img/post/lookism.webp" alt="" class="w-full h-64 object-cover object-center">
                     <div class="body px-5 py-5 !pb-7">
-                        <h1 class="text-darken text-2xl lg:text-3xl font-bold">Lookism Reach Top 5 Manhwa in Webtoon</h1>
-                        <p class="text-dark text-sm mt-1">by <a href="profile.html" class="text-darken">Azkazikna Ageung Laksana</a> in <a href="#" class="text-darken">Manhwa</a></p>
-                        <p class="text-darken mt-2 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum, est nulla, optio recusandae ipsa et praesentium ad tenetur itaque laborum nobis iusto laudantium quisquam nemo dolorum! Labore exercitationem pariatur amet incidunt molestias facilis sit nulla possimus voluptatum officiis est corrupti voluptates, voluptate quas inventore repudiandae consequatur voluptas? Eius, ratione?</p>
+                        <h1 class="text-darken dark:text-white text-2xl lg:text-3xl font-bold">Lookism Reach Top 5 Manhwa in Webtoon</h1>
+                        <p class="text-dark text-sm mt-1 dark:text-txtdark">by <a href="profile.html" class="text-darken dark:text-white">Azkazikna Ageung Laksana</a> in <a href="#" class="text-darken dark:text-white">Manhwa</a></p>
+                        <p class="text-darken dark:text-white mt-2 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum, est nulla, optio recusandae ipsa et praesentium ad tenetur itaque laborum nobis iusto laudantium quisquam nemo dolorum! Labore exercitationem pariatur amet incidunt molestias facilis sit nulla possimus voluptatum officiis est corrupti voluptates, voluptate quas inventore repudiandae consequatur voluptas? Eius, ratione?</p>
                         <a href="#" class="py-2 px-5 bg-primary text-darken rounded-full">Read More</a>
                     </div>
                 </div>
@@ -103,13 +118,13 @@
                 </div>
             </div>
             <div class="w-full lg:w-[30%] rounded-lg shadow-lg overflow-hidden px-5 py-5 self-start">
-                <h2 class="text-lg lg:text-xl font-bold mb-5 text-darken">Top User : </h2>
+                <h2 class="text-lg lg:text-xl font-bold mb-5 text-darken dark:text-white">Top User : </h2>
                 <a href="profile.html">
                     <div class="flex gap-3 items-center mb-5">
                         <img src="dist/img/avatar/maleProfile.png" alt="" class="w-16 h-16 rounded-full object-cover object-top border-2 border-primary">
                         <div class="text">
-                            <h6 class="text-darken font-semibold">Azkazikna Ageung Laksana</h6>
-                            <p class="text-sm text-dark">Total Post: 16</p>
+                            <h6 class="text-darken dark:text-white font-semibold">Azkazikna Ageung Laksana</h6>
+                            <p class="text-sm text-dark dark:text-txtdark">Total Post: 16</p>
                         </div>
                     </div>
                 </a>
@@ -117,8 +132,8 @@
                     <div class="flex gap-3 items-center mb-5">
                         <img src="dist/img/avatar/femaleProfile.png" alt="" class="w-16 h-16 rounded-full object-cover object-top border-2 border-primary">
                         <div class="text">
-                            <h6 class="text-darken font-semibold">Atiyah Ummi Sholihat</h6>
-                            <p class="text-sm text-dark">Total Post: 13</p>
+                            <h6 class="text-darken dark:text-white font-semibold">Atiyah Ummi Sholihat</h6>
+                            <p class="text-sm text-dark dark:text-txtdark">Total Post: 13</p>
                         </div>
                     </div>
                 </a>
@@ -126,8 +141,8 @@
                     <div class="flex gap-3 items-center mb-5">
                         <img src="dist/img/avatar/maleProfile2.png" alt="" class="w-16 h-16 rounded-full object-cover object-top border-2 border-primary">
                         <div class="text">
-                            <h6 class="text-darken font-semibold">Pramdhanni Dwi Putra Bintang</h6>
-                            <p class="text-sm text-dark">Total Post: 12</p>
+                            <h6 class="text-darken dark:text-white font-semibold">Pramdhanni Dwi Putra Bintang</h6>
+                            <p class="text-sm text-dark dark:text-txtdark">Total Post: 12</p>
                         </div>
                     </div>
                 </a>
@@ -137,9 +152,9 @@
     <!-- All book section end -->
 
     <!-- footer start -->
-    <footer class="py-8 bg-primary">
+    <footer class="py-8 bg-primary dark:bg-bgdarken">
         <div class="container mx-auto px-4">
-            <p class="text-darken text-center">&copy; Design by <a href="https://www.facebook.com/tswndr/" class="font-bold">Toby Suwindra</a> Built by <a href="https://azkazikna.github.io/" class="font-bold">Azkazikna Ageung Laksana</a> 2022. All rights reserved</p>
+            <p class="text-darken text-center dark:text-white">&copy; Design by <a href="https://www.facebook.com/tswndr/" class="font-bold">Toby Suwindra</a> Built by <a href="https://azkazikna.github.io/" class="font-bold">Azkazikna Ageung Laksana</a> 2022. All rights reserved</p>
         </div>
     </footer>
     <!-- footer end -->

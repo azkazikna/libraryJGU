@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Seebook</title>
+    <!-- Icon -->
+    <link rel="icon" href="dist/icon/casual-life-3d-yellow-pink-and-beige-books-lying-on-top-of-each-other.png">
+    <!-- Font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/27e42df87e.js" crossorigin="anonymous"></script>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css"/>
+    <!-- Datatables JS -->
+    <link rel="stylesheet" href="dist/css/datatables.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="dist/css/output.css">
+</head>
+<body class="font-poppins bg-[#FEFDF9] overflow-x-hidden relative w-full">
+
+    <!-- sidebar start -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="dist/img/avatar/maleProfile.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Azkazikna</span>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    
+                    <li class="nav-link">
+                        <a href="dashboard.html" class="list-none h-full bg-transparent flex items-center w-full rounded-md transition duration-300 text-darken hover:bg-primary">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link active">
+                        <a href="dashboard_categories.html" class="list-none h-full bg-transparent flex items-center w-full rounded-md transition duration-300 text-darken hover:bg-primary">
+                            <i class='bx bx-category-alt icon'></i>
+                            <span class="text nav-text">Categories Data</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="dashboard_books.html" class="list-none h-full bg-transparent flex items-center w-full rounded-md transition duration-300 text-darken hover:bg-primary">
+                            <i class='bx bx-book icon'></i>
+                            <span class="text nav-text">Books Data</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#" class="list-none h-full bg-transparent flex items-center w-full rounded-md transition duration-300 text-red-500 hover:bg-red-500 hover:text-white">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+    <!-- sidebar end -->
+
+    <!-- main content start -->
+    <section class="dashboard">
+        <div class="flex justify-center flex-col lg:flex-row gap-5 items-center">
+            <div class="text w-full">
+                <p class="text-dark text-md">Categories</p>
+                <h1 class="text-darken text-5xl font-bold">Data</h1>
+            </div>
+            <div class="statistik w-full">
+                <div class="bg-[#eae2d2] py-5 px-5 rounded-md flex justify-between items-center">
+                    <div class="text">
+                        <h2 class="text-3xl font-bold text-darken">7</h2>
+                        <h4 class="text-darken">Categories</h4>
+                    </div>
+                    <i class="fa-solid fa-book text-darken text-5xl"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="my-8">
+        <div class="w-full bg-white rounded-3xl p-16 shadow-lg overflow-x-auto">
+            <a href="" class="py-2 px-4 bg-green-200 text-green-500 rounded-md hover:bg-green-500 hover:text-white transition duration-500">Add Categories</a>
+            <hr class="mb-3 mt-5">
+            <table id="table_id" class="row-border text-darken text-sm max-w-full">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="10">1</td>
+                        <td><img src="dist/img/fantasy.jpeg" alt="" class="w-64 rounded-md"></td>
+                        <td>Fantasy</td>
+                        <td width="500">A romance novel or romantic novel generally refers to a type of genre fiction novel which places its primary focus on the relationship and romantic love between two people, and usually has an "emotionally satisfying and optimistic ending." However, precursors include authors of literary fiction, such as Samuel Richardson, Jane Austen, and Charlotte Brontë.</td>
+                        <td>
+                            <div class="flex flex-col lg:flex-row gap-2">
+                                <a href="#" class="px-5 py-2 bg-blue-100 text-blue-500 font-medium rounded-md border-blue-200 border hover:bg-blue-500 hover:text-white transition duration-500">Update</a>
+                                <a href="#" class="px-5 py-2 bg-red-100 text-red-500 font-medium rounded-md border-red-200 border hover:bg-red-500 hover:text-white transition duration-500">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="10">2</td>
+                        <td><img src="dist/img/education.jpg" alt="" class="w-64 rounded-md"></td>
+                        <td>Education</td>
+                        <td width="500">A romance novel or romantic novel generally refers to a type of genre fiction novel which places its primary focus on the relationship and romantic love between two people, and usually has an "emotionally satisfying and optimistic ending." However, precursors include authors of literary fiction, such as Samuel Richardson, Jane Austen, and Charlotte Brontë.</td>
+                        <td>
+                            <div class="flex flex-col lg:flex-row gap-2">
+                                <a href="#" class="px-5 py-2 bg-blue-100 text-blue-500 font-medium rounded-md border-blue-200 border hover:bg-blue-500 hover:text-white transition duration-500">Update</a>
+                                <a href="#" class="px-5 py-2 bg-red-100 text-red-500 font-medium rounded-md border-red-200 border hover:bg-red-500 hover:text-white transition duration-500">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="10">3</td>
+                        <td><img src="dist/img/history.jpg" alt="" class="w-64 rounded-md"></td>
+                        <td>Family</td>
+                        <td width="500">A romance novel or romantic novel generally refers to a type of genre fiction novel which places its primary focus on the relationship and romantic love between two people, and usually has an "emotionally satisfying and optimistic ending." However, precursors include authors of literary fiction, such as Samuel Richardson, Jane Austen, and Charlotte Brontë.</td>
+                        <td>
+                            <div class="flex flex-col lg:flex-row gap-2">
+                                <a href="#" class="px-5 py-2 bg-blue-100 text-blue-500 font-medium rounded-md border-blue-200 border hover:bg-blue-500 hover:text-white transition duration-500">Update</a>
+                                <a href="#" class="px-5 py-2 bg-red-100 text-red-500 font-medium rounded-md border-red-200 border hover:bg-red-500 hover:text-white transition duration-500">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="10">4</td>
+                        <td><img src="dist/img/romance.jpeg" alt="" class="w-64 rounded-md"></td>
+                        <td>Romance</td>
+                        <td width="500">A romance novel or romantic novel generally refers to a type of genre fiction novel which places its primary focus on the relationship and romantic love between two people, and usually has an "emotionally satisfying and optimistic ending." However, precursors include authors of literary fiction, such as Samuel Richardson, Jane Austen, and Charlotte Brontë.</td>
+                        <td>
+                            <div class="flex flex-col lg:flex-row gap-2">
+                                <a href="#" class="px-5 py-2 bg-blue-100 text-blue-500 font-medium rounded-md border-blue-200 border hover:bg-blue-500 hover:text-white transition duration-500">Update</a>
+                                <a href="#" class="px-5 py-2 bg-red-100 text-red-500 font-medium rounded-md border-red-200 border hover:bg-red-500 hover:text-white transition duration-500">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="10">5</td>
+                        <td><img src="dist/img/family.jpg" alt="" class="w-64 rounded-md"></td>
+                        <td>Family</td>
+                        <td width="500">A romance novel or romantic novel generally refers to a type of genre fiction novel which places its primary focus on the relationship and romantic love between two people, and usually has an "emotionally satisfying and optimistic ending." However, precursors include authors of literary fiction, such as Samuel Richardson, Jane Austen, and Charlotte Brontë.</td>
+                        <td>
+                            <div class="flex flex-col lg:flex-row gap-2">
+                                <a href="#" class="px-5 py-2 bg-blue-100 text-blue-500 font-medium rounded-md border-blue-200 border hover:bg-blue-500 hover:text-white transition duration-500">Update</a>
+                                <a href="#" class="px-5 py-2 bg-red-100 text-red-500 font-medium rounded-md border-red-200 border hover:bg-red-500 hover:text-white transition duration-500">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <!-- main content end -->
+
+    
+
+    
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<!-- Swiper Slider -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- Chart JS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.2/dist/chart.min.js"></script>
+<!-- Datatables JS -->
+<script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<!-- Custom Javascript -->
+<script src="dist/js/dashboard.js"></script>
+<script>
+    $(document).ready( function () {
+        $('#table_id').DataTable({
+            responsive: true
+        })
+        .columns.adjust()
+		.responsive.recalc();
+    });
+</script>
+</body>
+</html>
