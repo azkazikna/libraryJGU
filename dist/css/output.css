@@ -2143,6 +2143,11 @@ table.dataTable.no-footer {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
