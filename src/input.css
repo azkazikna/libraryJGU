@@ -70,7 +70,7 @@
 
 .sidebar{
     transition: 0.5s;
-    @apply fixed top-0 left-0 h-full w-64 py-3 px-4 bg-white z-[100] shadow-md;
+    @apply fixed top-0 left-0 h-full w-64 py-3 px-4 bg-white dark:bg-bgdarken z-[100] shadow-md;
 }
 .sidebar.close{
     @apply w-[88px];
@@ -82,7 +82,7 @@
 }
 
 .sidebar .active {
-    @apply rounded-md bg-primary;
+    @apply rounded-md bg-primary dark:bg-bgdark;
 }
 
 .sidebar header .image,
@@ -114,7 +114,7 @@
     @apply flex items-center;
 }
 .sidebar header .logo-text{
-    @apply flex flex-col transition duration-300 text-darken;
+    @apply flex flex-col transition duration-300 text-darken dark:text-white;
 }
 header .image-text .name {
     @apply mt-[2px] text-lg font-semibold;
@@ -159,21 +159,16 @@ header .image-text .profession{
 .menu-bar::-webkit-scrollbar{
     @apply hidden;
 }
-.sidebar .menu-bar .mode{
-    @apply rounded-md bg-primary relative transition duration-500;
-}
 
-.menu-bar .mode .sun-moon{
-    @apply h-[50px] w-[60px];
+/* darkmode toggle */
+.sidebar #dark-toggle:checked + label{
+    background-color: #F0EEF0!important;
+  }
+  
+.sidebar #dark-toggle:checked + label .ball{
+    transform: translateX(11px);
+    background-color: #020C1B;
 }
-
-.mode .sun-moon i{
-    @apply absolute;
-}
-.mode .sun-moon i.sun{
-    @apply opacity-0;
-}
-
 
 .menu-bar .bottom-content .toggle-switch{
     @apply absolute right-0 h-full min-w-[60px] flex items-center justify-center rounded-md cursor-pointer;
@@ -183,40 +178,27 @@ header .image-text .profession{
     @apply relative h-[22px] w-[40px] rounded-3xl bg-dark transition duration-500;
 }
 
-.switch::before{
-    content: '';
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    background-color: #fff;
-    transition: 0.4s;
-}
-
 .dashboard{
     width: calc(100% - 250px);
     transition: 0.5s;
-    @apply absolute top-0 left-64 h-screen bg-[#FEFDF9] py-7 px-14;
+    @apply absolute top-0 left-64 bg-[#FEFDF9] py-7 px-5 lg:px-14 dark:bg-bgdark h-fit;
 }
 
 .sidebar.close ~ .dashboard{
     left: 78px;
-    height: 105vh;
+    height: fit-content;
     width: calc(100% - 78px);
 }
 
 /*Form fields*/
 .dataTables_wrapper select,
 .dataTables_wrapper .dataTables_filter input {
-    @apply rounded-md text-darken pl-4 pr-4 pt-2 pb-2 leading-tight outline-none ml-3 mb-4;
+    @apply rounded-md text-darken dark:text-txtdark pl-4 pr-4 pt-2 pb-2 leading-tight outline-none ml-3 mb-4;
 }
 
 /*Pagination Buttons*/
 .dataTables_wrapper .dataTables_paginate .paginate_button {
-    @apply font-medium rounded-md border-transparent;
+    @apply font-medium rounded-md border-transparent dark:text-txtdark;
 }
 
 /*Pagination Buttons - Current selected */
@@ -233,4 +215,30 @@ header .image-text .profession{
 /*Add padding to bottom border */
 table.dataTable.no-footer {
     @apply mt-3 mb-3 rounded-xl border-transparent overflow-hidden;
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    @apply dark:text-txtdark;
+}
+
+table.dataTable.row-border tbody th,
+table.dataTable.row-border tbody td,
+table.dataTable.display tbody th,
+table.dataTable.display tbody td {
+    @apply border-t border-black border-opacity-[0.15] dark:border-white dark:border-opacity-[0.15];
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    @apply p-4 border-b border-black border-opacity-30 dark:border-white dark:border-opacity-30;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    @apply dark:text-white;
 }

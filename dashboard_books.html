@@ -47,21 +47,21 @@
                 <ul class="menu-links">
                     
                     <li class="nav-link">
-                        <a href="dashboard.html" class="list-none h-full bg-transparent flex items-center w-full rounded-md transition duration-300 text-darken hover:bg-primary">
+                        <a href="dashboard.html" class="list-none h-full bg-transparent flex items-center w-full rounded-md transition duration-300 text-darken dark:text-white hover:bg-primary dark:hover:bg-bgdark">
                             <i class='bx bx-home-alt icon'></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="dashboard_categories.html" class="list-none h-full bg-transparent flex items-center w-full rounded-md transition duration-300 text-darken hover:bg-primary">
+                        <a href="dashboard_categories.html" class="list-none h-full bg-transparent flex items-center w-full rounded-md transition duration-300 text-darken dark:text-white hover:bg-primary dark:hover:bg-bgdark">
                             <i class='bx bx-category-alt icon'></i>
                             <span class="text nav-text">Categories Data</span>
                         </a>
                     </li>
 
                     <li class="nav-link active">
-                        <a href="dashboard_books.html" class="list-none h-full bg-transparent flex items-center w-full rounded-md transition duration-300 text-darken hover:bg-primary">
+                        <a href="dashboard_books.html" class="list-none h-full bg-transparent flex items-center w-full rounded-md transition duration-300 text-darken dark:text-white hover:bg-primary dark:hover:bg-bgdark">
                             <i class='bx bx-book icon'></i>
                             <span class="text nav-text">Books Data</span>
                         </a>
@@ -79,15 +79,10 @@
                 </li>
 
                 <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
+                    <input type="checkbox" class="opacity-0 absolute top-0 group" id="dark-toggle">
+                    <label for="dark-toggle" class="w-[35px] h-[26px] bg-primary flex rounded-full items-center justify-between p-[3px] relative scale-150 cursor-pointer transition duration-300 ease-linear ml-2">
+                        <div class='ball w-[17px] h-[17px] bg-[#FEFDF9] absolute rounded-full transition duration-200 ease-linear'>
+                    </label>
                 </li>
                 
             </div>
@@ -100,25 +95,25 @@
     <section class="dashboard">
         <div class="flex justify-center flex-col lg:flex-row gap-5 items-center">
             <div class="text w-full">
-                <p class="text-dark text-md">Books</p>
-                <h1 class="text-darken text-5xl font-bold">Data</h1>
+                <p class="text-dark text-md dark:text-txtdark">Books</p>
+                <h1 class="text-darken text-5xl font-bold dark:text-white">Data</h1>
             </div>
             <div class="statistik w-full">
-                <div class="bg-[#eae2d2] py-5 px-5 rounded-md flex justify-between items-center">
+                <div class="bg-[#eae2d2] dark:bg-bgdarken py-5 px-5 rounded-md flex justify-between items-center">
                     <div class="text">
-                        <h2 class="text-3xl font-bold text-darken">43</h2>
-                        <h4 class="text-darken">Your Books</h4>
+                        <h2 class="text-3xl font-bold text-darken dark:text-white">43</h2>
+                        <h4 class="text-darken dark:text-white">Your Books</h4>
                     </div>
-                    <i class="fa-solid fa-book text-darken text-5xl"></i>
+                    <i class="fa-solid fa-book text-darken text-5xl dark:text-white"></i>
                 </div>
             </div>
         </div>
         <hr class="my-8">
-        <div class="w-full bg-white rounded-3xl p-16 shadow-lg overflow-x-auto">
+        <div class="w-full bg-white dark:bg-bgdarken rounded-3xl p-16 shadow-lg overflow-x-auto">
             <a href="" class="py-2 px-4 bg-green-200 text-green-500 rounded-md hover:bg-green-500 hover:text-white transition duration-500">Add Book</a>
             <hr class="mb-3 mt-5">
             <table id="table_id" class="row-border text-darken text-sm max-w-full">
-                <thead>
+                <thead class="dark:text-txtdark">
                     <tr>
                         <th>No</th>
                         <th>Cover</th>
@@ -129,7 +124,7 @@
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="dark:text-txtdark">
                     <tr>
                         <td width="10">1</td>
                         <td><img src="dist/img/book/hp_chamber.jpg" alt="" class="w-44 h-56 rounded-md"></td>
@@ -207,9 +202,7 @@
     
     <!-- main content end -->
 
-    
 
-    
 <!-- Jquery -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!-- GSAP -->
