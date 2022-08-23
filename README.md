@@ -13,12 +13,10 @@
 
 </div>
 
-# Installation
-
-1. Clone this repository
-```bash
-git clone https://github.com/azkazikna/libraryJGU.git
-```
+## Usage
+#### Building yourself
+- Clone the repository `git clone https://github.com/azkazikna/libraryJGU`
+- Create database name 'libraryJGU' then import file 'database/libraryJGU.sql'
 
 # License
 This repository is under MIT License
