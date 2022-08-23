@@ -1,0 +1,119 @@
+[19-Aug-2022 00:12:41 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:12:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:51 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:12:51 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:51 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:51 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:51 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:59 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:12:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:12:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:12:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:13:01 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:14:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:15:03 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/k0787896/public_html/admin/functions.php on line 3
+[19-Aug-2022 00:15:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:15:03 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:15:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:15:03 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:15:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:15:03 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 00:15:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/k0787896/public_html/admin/functions.php on line 7
+[19-Aug-2022 00:15:03 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/k0787896/public_html/admin/functions.php on line 9
+[19-Aug-2022 03:22:46 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[19-Aug-2022 04:04:43 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[20-Aug-2022 03:55:38 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[20-Aug-2022 03:55:46 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 09:14:24 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 09:17:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 09:22:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 09:22:39 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 09:23:05 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 09:47:41 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 09:48:17 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 09:51:02 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 09:53:04 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 09:53:12 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 10:43:04 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 10:43:13 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 12:02:35 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 12:08:21 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 12:08:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4
+[23-Aug-2022 12:09:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/k0787896/public_html/template/header.php on line 4

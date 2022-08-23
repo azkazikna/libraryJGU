@@ -10,6 +10,27 @@ toggle.addEventListener("click" , () =>{
     sidebar.classList.toggle("close");
 })
 
+// responsive sidebar
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 768) {
+        sidebar.classList.add("close");
+    }
+});
+
+if (window.innerWidth < 768) {
+    sidebar.classList.add("close");
+}
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        sidebar.classList.remove("close");
+    }
+});
+
+if (window.innerWidth > 768) {
+    sidebar.classList.remove("close");
+}
+
 // Dark mode toggle
 const darkToggle = document.getElementById('dark-toggle');
 const html = document.querySelector('html');

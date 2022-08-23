@@ -33,10 +33,9 @@ barba.init({
                 const swiper1 = new Swiper('.swiper1', {
                     // Optional parameters
                     direction: 'horizontal',
-                    loop: true,
                     slidesPerView: 3,
                     spaceBetween: 20,
-
+                    autoHeight: true,
                     breakpoints: {
                         // when window width is >= 640px
                         640: {

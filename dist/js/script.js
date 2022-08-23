@@ -31,16 +31,11 @@ function pageTransition() {
 window.onscroll = function() {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
-    const toTop = document.getElementById('toTop');
 
     if(window.pageYOffset > fixedNav) {
         header.classList.add('navbar-fixed');
-        toTop.classList.remove('hidden');
-        toTop.classList.add('flex');
     } else {
         header.classList.remove('navbar-fixed');
-        toTop.classList.remove('flex');
-        toTop.classList.add('hidden');
     }
 }
 
@@ -73,10 +68,9 @@ if ('scrollRestoration' in history) {
 const swiper1 = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
     slidesPerView: 3,
     spaceBetween: 20,
-
+    autoHeight: true,
     breakpoints: {
         // when window width is >= 640px
         640: {
@@ -143,4 +137,20 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
     darkToggle.checked = true;
 } else {
     darkToggle.checked = false;
+}
+
+function modalBook() {
+    // modal book
+    const open = document.querySelector('#open');
+    const modal_container = document.getElementById('modal_container');
+    const close = document.getElementById('close');
+
+    open.addEventListener('dblclick', () => {
+        modal_container.classList.add('show');
+    });
+
+    close.addEventListener('click', () => {
+        modal_container.classList.remove('show');
+    });
+    
 }
