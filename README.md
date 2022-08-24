@@ -1,13 +1,13 @@
 
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200">
+  <img src="[https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png](https://user-images.githubusercontent.com/70270081/186301276-74549a37-226f-4bc6-b2e0-be443d51fec5.png)" alt="libraryJGU" width="200">
   <br>
   Library JGU
   <br>
 </h1>
 
-![libraryJGU](https://user-images.githubusercontent.com/70270081/186301276-74549a37-226f-4bc6-b2e0-be443d51fec5.png)
+![libraryJGU](https://user-images.githubusercontent.com/70270081/186301655-dcca8456-48ed-43d1-82c8-de6a113450fc.png)
 
 <h4 align="center">Library JGU is a website created for a university library system information. Made with PHP & <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>.</h4>
 
