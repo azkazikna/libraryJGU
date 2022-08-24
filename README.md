@@ -74,7 +74,7 @@ This repository is under MIT License.
 ---
 
 > [azkazikna.github.io](https://azkazikna.github.io/) &nbsp;&middot;&nbsp;
-> GitHub [@azkazikna]([https://github.com/amitmerchant1990](https://github.com/azkazikna)) &nbsp;&middot;&nbsp;
-> Twitter [@azkazikna3]([https://twitter.com/amit_merchant](https://twitter.com/Azkazikna3))
+> GitHub [@azkazikna](https://github.com/azkazikna) &nbsp;&middot;&nbsp;
+> Twitter [@azkazikna3](https://twitter.com/Azkazikna3)
 
 
