@@ -10,10 +10,12 @@
 <h4 align="center">Library JGU is a website created for a university library system information. Made with PHP & <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>.</h4>
 
 <div align="center">
+  
 ![GitHub contributors](https://img.shields.io/github/contributors/azkazikna/libraryJGU?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/azkazikna/libraryJGU?style=for-the-badge)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/azkazikna/libraryJGU?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/azkazikna/libraryJGU?style=for-the-badge)
+  
 </div>
 
 <p align="center">
