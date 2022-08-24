@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">Library JGU is a website created for a university library system information. Made with PHP & <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>.</h4>
+<h4 align="center">Library JGU is a website created for a university library system information. Made with <a href="https://www.php.net/" target="_blank">PHP</a> & <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>.</h4>
 
 <div align="center">
   
@@ -63,9 +63,6 @@ if you want to change the name of the database, please also change it in the adm
 ## You may also like...
 
 - [SeeBook](https://github.com/azkazikna/seebook) - A user interface for ebook library applications.
-
-# License
-This repository is under MIT License
 
 ## License
 
