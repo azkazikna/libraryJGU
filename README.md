@@ -51,8 +51,8 @@ $ git clone https://github.com/azkazikna/libraryJGU
 
 # Create database
 - turn on the apache web server and phpmyadmin
-- go to localhost/phpmyadmin, then create a database named libraryJGU
-- import the sql file which is in database/libraryJGU.sql
+- go to localhost/phpmyadmin, then create a database named libraryjgu
+- import the sql file which is in database/libraryjgu.sql
 
 # OPTIONAL
 if you want to change the name of the database, please also change it in the admin/functions.php and member/functions.php files
