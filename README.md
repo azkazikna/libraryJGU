@@ -54,8 +54,27 @@ $ git clone https://github.com/azkazikna/libraryJGU
 # Create database
 - turn on the apache web server and phpmyadmin
 - go to localhost/phpmyadmin, then create a database named libraryJGU
-- import the sql file which is in database/libraryJGU.sql 
+- import the sql file which is in database/libraryJGU.sql
+
+# OPTIONAL
+if you want to change the name of the database, please also change it in the admin/functions.php and member/functions.php files
 ```
+
+## You may also like...
+
+- [SeeBook](https://github.com/azkazikna/seebook) - A user interface for ebook library applications.
 
 # License
 This repository is under MIT License
+
+## License
+
+This repository is under MIT License.
+
+---
+
+> [azkazikna.github.io](https://azkazikna.github.io/) &nbsp;&middot;&nbsp;
+> GitHub [@azkazikna]([https://github.com/amitmerchant1990](https://github.com/azkazikna)) &nbsp;&middot;&nbsp;
+> Twitter [@azkazikna3]([https://twitter.com/amit_merchant](https://twitter.com/Azkazikna3))
+
+
