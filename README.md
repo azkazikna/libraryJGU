@@ -1,14 +1,22 @@
-<h1 align="center">Library JGU</h1>
 
-![libraryJGU](https://user-images.githubusercontent.com/70270081/186207890-2fd768e1-a7b4-4394-955a-82a80cd5599b.png)
+<h1 align="center">
+  <br>
+  <img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200">
+  <br>
+  Library JGU
+  <br>
+</h1>
 
-<p align="center">Library JGU is a website created for a university library system information. Made with PHP & TailwindCSS</p>
+![libraryJGU](https://user-images.githubusercontent.com/70270081/186301276-74549a37-226f-4bc6-b2e0-be443d51fec5.png)
+
+<h4 align="center">Library JGU is a website created for a university library system information. Made with PHP & <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>.</h4>
 
 <div align="center">
 
 ![GitHub contributors](https://img.shields.io/github/contributors/azkazikna/libraryJGU?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/azkazikna/libraryJGU?style=for-the-badge)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/azkazikna/libraryJGU?style=for-the-badge)
+
 ![GitHub](https://img.shields.io/github/license/azkazikna/libraryJGU?style=for-the-badge)
 
 </div>
