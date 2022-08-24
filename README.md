@@ -43,12 +43,19 @@
 
 
 
+## How To Use
 
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-## Usage
-#### Building yourself
-- Clone the repository `git clone https://github.com/azkazikna/libraryJGU`
-- Create database name 'libraryJGU' then import file 'database/libraryJGU.sql'
+```bash
+# Clone this repository
+$ git clone https://github.com/azkazikna/libraryJGU
+
+# Create database
+- turn on the apache web server and phpmyadmin
+- go to localhost/phpmyadmin, then create a database named libraryJGU
+- import the sql file which is in database/libraryJGU.sql 
+```
 
 # License
 This repository is under MIT License
