@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png](https://user-images.githubusercontent.com/70270081/186301276-74549a37-226f-4bc6-b2e0-be443d51fec5.png" alt="libraryJGU" width="200">
+  <img src="https://user-images.githubusercontent.com/70270081/186301276-74549a37-226f-4bc6-b2e0-be443d51fec5.png" alt="libraryJGU" width="200">
   <br>
   Library JGU
   <br>
